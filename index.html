@@ -127,19 +127,19 @@ if (!document.createElement('canvas').getContext) {
 	adjustCodePosition();
 	$("#code").typewriter();
 }
+</script>
 
 <audio id="bg-music" autoplay loop muted>
     <source src="song.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- Optional script to unmute after first click -->
   <script>
     document.addEventListener('click', () => {
       const audio = document.getElementById('bg-music');
       audio.muted = false;
       audio.play();
     }, { once: true });
-
-</script>
+  </script>
+	
 </body>
 </html>
